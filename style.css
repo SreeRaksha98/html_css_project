@@ -1,0 +1,14 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+.main {
+    background: rgb(225, 238, 192);
+    color: rgb(151, 87, 239);
+    height: 100vh;
+
+}
+ol{
+    padding-left: 1rem;
+
+}
