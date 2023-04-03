@@ -14,7 +14,6 @@ body {
 }
 .calculator_container{
     width: 30%;
-    height: 80vh;
     box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: space-between;
@@ -34,8 +33,7 @@ form .display_answer input{
     color: white;
 }
 button{
-    width: 60px;
-    height: 52px;
+
     font-size: 22px;
     border-radius: 5px;
     padding: 20px;
@@ -49,4 +47,30 @@ button{
 form .equal {
     background-color: green;
     color: white;
+}
+.line1,.line2,.line3,.line4, .line5 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 1rem;
+}
+.line5{
+    grid-template-columns: 1fr 1fr;
+}
+.inputs{
+    display: grid;
+    padding-top: 20px;
+
+}
+@media only screen and (max-width: 600px) {
+.calculator_container{
+    height: 100%;
+    width: 100%;
+}
+form{
+    display: grid;
+    grid-template-rows: 2fr 5fr;
+}
+form .display_answer input{
+    height: 100%;
+}
 }
