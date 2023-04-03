@@ -6,9 +6,18 @@
     background: rgb(225, 238, 192);
     color: rgb(151, 87, 239);
     height: 100vh;
-
+    padding: 2rem;
 }
 ol{
     padding-left: 1rem;
+    padding-top: 1rem;
+}
+li, li a {
+    color: rgb(58, 58, 58);
+}
+@media only screen and (max-width: 600px) {
+    ol li {
+        padding: 1rem 0;
+    }
 
 }

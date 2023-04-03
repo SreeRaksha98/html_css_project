@@ -64,3 +64,8 @@
 .product-action{
     display: flex;
 }
+@media only screen and (max-width: 600px) {
+    .product-grid{
+        grid-template-columns: 1fr;
+    }
+}
