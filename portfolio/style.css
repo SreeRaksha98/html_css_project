@@ -1,0 +1,251 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Shantell Sans', cursive;
+	box-sizing: border-box;
+}
+body {
+	background: #222222;
+}
+a{
+	text-decoration: none;
+}
+.heroine {
+	height: 100vh;
+	width: 100%;
+	background: url(photo4.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.logo {
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-weight: 900;
+    font-family: 'Josefin Sans', sans-serif;
+}
+nav{
+/*position: fixed;*/
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 45px;
+	padding-left: 8%;
+	padding-right: 8%;
+}
+.secondary-text{
+	color: #f9004d;
+}
+nav ul li {
+	display: inline-flex;
+	list-style-type: none;
+	padding: 10px 20px;
+}
+nav ul li a {
+	color: white;
+	font-weight: bold;
+	text-transform: capitalize;	
+}
+nav ul li a:hover{
+	color: #f9004d;
+	transition: transform 0.4s;
+}
+.subscribe {
+    border-radius: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0.5rem;
+    font-weight: 900;
+    background: #f9004d;
+    color: whitesmoke;
+    transition: tranform 0.4s;
+}
+.subscribe:hover {
+	transform: scale(1.2);
+}
+.intro {
+	color: white;
+	padding-top: 200px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.intro h3 {
+	padding-top: 1rem;
+}
+.name {
+	color: #98195f;
+}
+.about-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	color: white;
+	height: 100vh;
+	width: 100%;
+	background-image: url(photo5.jpeg);
+	background-size: cover;
+	background-position: center;
+
+}
+.about-text {
+	grid-column-start: 2;
+	grid-row-start: 2;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.about-text *{
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 1px;
+	line-height: 2;
+	text-align: justify;
+	text-justify: inter-word;
+	padding-right: 4rem;
+}
+.large-font {
+	font-size: xx-large;
+}
+.linkedin {
+	font-size: x-large;
+	color: white;
+	margin: 2rem 0;
+}
+.link {
+	transition: 2s linear;
+}
+.link:hover {
+	text-decoration: underline;
+	
+}
+.projects h1 {
+	font-size: xx-large;
+}
+.project-container {
+	display: flex;
+	background: black;
+	min-height: 100vh;
+	width: 100%;
+	padding-top: 1rem;
+	color: white;
+	flex-direction: column;
+	padding: 0 5rem 5rem 5rem;
+}
+.project-title {
+	color: white;
+	margin: 0 auto;
+	margin-bottom: 2rem;
+}
+.project-cards {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 3rem;
+}
+.project-card {
+	background: linear-gradient(590deg, #0002ff, #ff00e6, #ff0000);
+	min-height: 20rem;
+	border-radius: 10px;
+	display: flex;
+    flex-direction: column;
+}
+.card-content{
+	background: white;
+	padding-top: 1rem;
+	margin-top: auto;
+	border-radius: 10px 10px 10px 10px;
+	height: 0;
+	overflow-y: none;
+	transition: all 1s;
+}
+.card-content:hover{
+	display: block;
+	padding-top: 0rem;
+	height: 100%;
+	transition: all 1s;
+
+}
+.visble-on-hover {
+	color: black;
+}
+.card-title {
+    font-size: x-large;
+    padding: 1rem 1.5rem;
+    font-family: 'Josefin Sans';
+}
+/**
+Tools
+*/
+.tool-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 2rem auto;
+	max-width: 1200px;
+}
+
+/* CSS for tool card */
+.tool-card {
+	background-color: #333;
+	border: 1px solid #444;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+	margin: 1rem;
+	padding: 1rem;
+	text-align: center;
+	width: calc(33.33% - 2rem);
+}
+
+/* CSS for icon */
+.tool-icon {
+	color: #fff;
+	font-size: 3rem;
+	margin-bottom: 0.5rem;
+}
+
+/* CSS for tool card description */
+.tool-card p {
+	color: #bbb;
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+.project-coming-soon {
+	display: flex;
+	flex-direction: column;
+}
+.project-coming-soon .project-link {
+	font-size: x-large;
+    color: white;
+}
+.small-container {
+    display: flex;
+    background: black;
+    width: 100%;
+    padding-top: 1rem;
+    color: white;
+    flex-direction: column;
+    padding: 0 5rem 5rem 5rem;
+}
+@media only screen and (max-width: 600px) {
+	nav {
+		flex-direction: column;
+	}
+	.heroine {
+		background-size: unset;
+	}
+	.about-container {
+		display: flex;
+	}
+	.about-text > *{
+		padding: 0 2rem;
+	}
+	.tool-container{
+		flex-direction: column;
+	}
+	.tool-card {
+		width: 100%;
+	}
+	.project-coming-soon i{
+		font-size: larger;
+	}
+	.project-coming-soon .project-link {
+		font-size: large;
+	}
+}
