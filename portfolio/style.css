@@ -274,4 +274,7 @@ img.accomplishment-img {
 	.project-coming-soon .project-link {
 		font-size: large;
 	}
+	.accomplishment-container{
+		grid-template-columns: 1fr;
+	}
 }
