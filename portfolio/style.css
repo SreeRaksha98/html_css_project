@@ -121,8 +121,8 @@ nav ul li a:hover{
 .project-container {
 	display: flex;
 	background: black;
-	min-height: calc(100vh - 5rem);
-	width: calc(100% - 10rem);
+	min-height: 100vh;
+	width: 100%;
 	padding-top: 1rem;
 	color: white;
 	flex-direction: column;
@@ -217,7 +217,8 @@ Tools
 .small-container {
     display: flex;
     background: black;
-    width: calc(100% - 10rem);
+    width: 100%;
+    padding-top: 1rem;
     color: white;
     flex-direction: column;
     padding: 0 5rem 5rem 5rem;
@@ -249,7 +250,7 @@ img.accomplishment-img {
 		flex-direction: column;
 		padding: 0;
 	}
-	.intro {
+	.intro{
 		padding: 0;
 	}
 	.heroine {
@@ -272,8 +273,5 @@ img.accomplishment-img {
 	}
 	.project-coming-soon .project-link {
 		font-size: large;
-	}
-	.accomplishment-container{
-		grid-template-columns: 1fr;
 	}
 }
