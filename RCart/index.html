@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <!---------------------------'downward arrow key'---------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!---------------------------'mulish font'---------------------------------->   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;400;600&display=swap" rel="stylesheet">
+
+    <!---------------------------'linking fruits cart, meat cart and vegetables cart'---------------------------------->
+    <!-- <link rel="stylesheet" href="fruitNinja/style.css">
+    <link rel="stylesheet" href="meat/style.css">
+    <link rel="stylesheet" href="vegeNinja/style.css"> -->
+
+</head>
+<body>
+    <!---------------------------'Header'---------------------------------->
+    <section class="header">
+        <div class="logo">
+            <img src="images/rcart_logo.png" alt="RCommerce logo">
+        </div>
+        <div class="menu">        
+            <div class="dropdown">
+                <button class="dropbtn">              <!----daily---->
+                    <i class="fa fa-caret-down">                       
+                    </i> Daily 
+                </button>
+                <div class="dropdown-content">    
+                    <div class="row">
+                        <div class="column">
+                            <a href="/RCart/fruitNinja" target="_blank">Fruits</a>
+                            <a href="/RCart/vegeNinja" target="_blank">Vegetables</a>
+                            <a href="/RCart/meat" target="_blank">Meat</a>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="dropdown">
+                <button class="dropbtn">             <!----Fashion---->
+                    <i class="fa fa-caret-down">                       
+                    </i>Fashion
+                </button>
+                <div class="dropdown-content"> 
+                    <div class="row">
+                        <div class="column">
+                            <h3>
+                                Mens
+                            </h3>
+                            <a href="#">footware</a>
+                            <a href="#">attire</a>
+                            <a href="#">accessories</a>
+                        </div>
+                        <div class="column">
+                            <h3>
+                                Womens
+                            </h3>
+                            <a href="#">footware</a>
+                            <a href="#">attire</a>
+                            <a href="#">accessories</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search">                                    <!-----search------>
+            <div class="search">
+                <input type="text" class="searchTerm" placeholder="search for Vegetables, fruits and more">
+                <button type="submit" class="searchButton">
+                   <i class="fa fa-search"></i>
+                </button>
+            </div>
+        </div>
+        <div class="user-logo">                                <!-----user-logo------>
+            <div class="search">
+            <svg viewBox="0 0 48 48" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="17" fill="#00ae45" r="6" class="fill-241f20"></circle><path d="M24 0C10.745 0 0 10.745 0 24s10.745 24 24 24 24-10.745 24-24S37.255 0 24 0zm11.812 40.113v-3.301C35.812 30.289 30.523 25 24 25c-6.524 0-11.812 5.289-11.812 11.812v3.301C7.231 36.473 4 30.621 4 24 4 12.954 12.954 4 24 4s20 8.954 20 20c0 6.621-3.231 12.473-8.188 16.113z" fill="#00ae45" class="fill-241f20"></path></svg>
+        </div>
+    </section>
+
+    <!---------------------------'banner'---------------------------------->
+    <section class="banner-section">
+        <div class="top-left">
+            <div class="header-text">
+                Shopping <br> and harvest store.
+            </div>
+            <div class="content-text">
+                <p>It’s healthier for us, better for the environment, and certainly kinder to be a vegetarian.</p>
+                <button class="shop-now">
+                    shop now
+                </button>
+            </div>
+        </div>
+        <div class="bottom-right">
+            <div class="marketing">
+                <p>order now on</p>
+                <a href="#">www.vercel.com</a>
+            </div>
+         </div>
+    </section>
+
+    <!---------------------------'products'---------------------------------->
+    <section class="products">
+        <p class="heading">Shop our top categories</p>
+        <div class="main-container">
+            <div class="sub-container" style="background-color: var(--red); color: white;">
+                <div class="image-class">
+                    <img src="images/homepage_img/mens_shoe.webp" alt="">
+                </div>
+                <div class="desc">
+                    <div class="small-heading"> save </div>
+                    <div class="discount"> 20% </div>
+                    <div class="someshit"> Explore our branding shoes </div>
+                </div>
+            </div>
+            <div class="sub-container" style="background-color: var(--black); color: white;">
+                <div class="image-class">
+                    <img src="images/homepage_img/clutch.webp" alt="">
+                </div>
+                <div class="desc">
+                    <div class="small-heading"> save </div>
+                    <div class="discount"> 15% </div>
+                    <div class="someshit"> enjoy outing with our branded wallet </div>
+                </div>
+            </div>
+            <div class="sub-container" style="background-color: var(--pink); color: white;">
+                <div class="image-class">
+                    <img src="images/homepage_img/tshirts.webp" alt="">
+                </div>
+                <div class="desc">
+                    <div class="small-heading"> save </div>
+                    <div class="discount"> 23% </div>
+                    <div class="someshit"> have a look at casual tshirts </div>
+                </div>
+            </div>
+            <div class="sub-container" style="background-color: var(--blue); color: white;">
+                <div class="image-class">
+                    <img src="images/homepage_img/handbag.webp" alt="">
+                </div>
+                <div class="desc">
+                    <div class="small-heading"> save </div>
+                    <div class="discount"> 10% </div>
+                    <div class="someshit"> outfit is incomplete without handbag </div>
+                </div>
+            </div>
+            <div class="sub-container" style="background-color: var(--magenta); color: white;">
+                <div class="image-class">
+                    <img src="images/homepage_img/womens_footware.webp" alt="">
+                </div>
+                <div class="desc">
+                    <div class="small-heading"> save </div>
+                    <div class="discount"> 30% </div>
+                    <div class="someshit"> Explore our branding sandals </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------------'linking fruits cart, meat cart and vegetables cart'---------------------------------->
+    <!-- <script src="script.js"></script>
+    <script src="fruitNinja/script.js"></script>
+    <script src="meat/script.js"></script>
+    <script src="vegeNinja/script.js"></script> -->
+
+</body>
+</html>
