@@ -290,4 +290,7 @@ body {
       width: 100%;
       height: auto;
     }
+    .main-container{
+    	grid-template-columns: repeat(2, 1fr);
+    }
 }
