@@ -173,7 +173,7 @@ body {
 .banner-section {
     height: 20em;
     width: 100%;
-    background: url(images/banner/fruits_veg_banner.jpg) #0000001c;
+    background: url(/RCart/images/banner/fruits_veg_banner.jpg) #0000001c;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
     background-size: cover;

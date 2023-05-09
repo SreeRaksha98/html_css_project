@@ -23,7 +23,7 @@ fruitsArray.forEach((fruit, index) => {
 
     var image = document.createElement('img')
     image.classList.add("image-class")
-    image.src = imageArray[index] 
+    image.src = '/RCart/vegeNinja/' + imageArray[index] 
         
     // creating buttons, input tag and a tag
     var anchorTag = document.createElement('a')
