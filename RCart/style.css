@@ -294,4 +294,18 @@ body {
     	grid-template-columns: repeat(2, 1fr);
 	grid-row-gap: 1rem;
     }
+    .banner-section {
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .top-left  {
+        padding: 0;
+    }
+    .bottom-right {
+        grid-area: unset; 
+        margin: 0;
+        margin-top: auto;
+        margin-left: auto;
+    }
 }
