@@ -434,4 +434,7 @@ body {
     .row.address-main {
        grid-template-columns: 1fr;
     }
+    .dropdown:hover .dropdown-content {
+        top: 100px;
+    }
 }
