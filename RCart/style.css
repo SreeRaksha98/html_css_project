@@ -402,6 +402,17 @@ body {
       width: 100%;
       height: auto;
     }
+    .content-text {
+        width: 100%;
+    }
+    .address-box.clearfix {
+        margin: 0;
+        display: grid;
+        grid-template-columns: 1fr 9fr;
+    }
+    .address-box.clearfix .add-content {
+        padding: 0;
+    }
     .main-container{
     	grid-template-columns: repeat(2, 1fr);
 	    grid-row-gap: 1rem;
@@ -419,5 +430,8 @@ body {
         margin: 0;
         margin-top: auto;
         margin-left: auto;
+    }
+    .row.address-main {
+       grid-template-columns: 1fr;
     }
 }
