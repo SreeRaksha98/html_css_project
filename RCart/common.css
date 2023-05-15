@@ -26,10 +26,10 @@ body {
     grid-template-columns: 1.5fr 3fr 4fr 1fr;
 }
 
-.logo img{
+.logo img {
     padding: 1rem;
     align-self: center;
-    width: 90px;
+    width: 80px;
     display: flex;
     margin:auto;
 }
