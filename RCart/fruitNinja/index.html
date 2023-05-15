@@ -5,12 +5,158 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fruit ninja</title>
+    <link rel="stylesheet" href="/RCart/common.css">
+    <link rel="shortcut icon" href="/RCart/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/RCart/fruitNinja/style.css">
+    <!---------------------------'downward arrow key and search icon'---------------------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+        <!---------------------------'Header'---------------------------------->
+        <section class="header">
+            <div class="logo">
+                <img src="/RCart/images/rcart_logo.png" alt="RCommerce logo">
+            </div>
+            <div class="menu">
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <!----daily---->
+                        <i class="fa fa-caret-down">
+                        </i> Daily
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="row">
+                            <div class="column">
+                                <a href="/RCart/fruitNinja" target="_blank">Fruits</a>
+                                <a href="/RCart/vegeNinja" target="_blank">Vegetables</a>
+                                <a href="/RCart/meat" target="_blank">Meat</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        <!----Fashion---->
+                        <i class="fa fa-caret-down">
+                        </i>Fashion
+                    </button>
+                    <div class="dropdown-content">
+                        <div class="row">
+                            <div class="column">
+                                <h3>
+                                    Mens
+                                </h3>
+                                <a href="#">footware</a>
+                                <a href="#">attire</a>
+                                <a href="#">accessories</a>
+                            </div>
+                            <div class="column">
+                                <h3>
+                                    Womens
+                                </h3>
+                                <a href="#">footware</a>
+                                <a href="#">attire</a>
+                                <a href="#">accessories</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search">
+                <!-----search------>
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="search for Vegetables, fruits and more">
+                    <button type="submit" class="searchButton">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="user-logo">
+                <!-----user-logo------>
+                <div class="search">
+                    <svg viewBox="0 0 48 48" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="24" cy="17" fill="#00ae45" r="6" class="fill-241f20"></circle>
+                        <path
+                            d="M24 0C10.745 0 0 10.745 0 24s10.745 24 24 24 24-10.745 24-24S37.255 0 24 0zm11.812 40.113v-3.301C35.812 30.289 30.523 25 24 25c-6.524 0-11.812 5.289-11.812 11.812v3.301C7.231 36.473 4 30.621 4 24 4 12.954 12.954 4 24 4s20 8.954 20 20c0 6.621-3.231 12.473-8.188 16.113z"
+                            fill="#00ae45" class="fill-241f20"></path>
+                    </svg>
+                </div>
+        </section>
     <div class="main-container">
         <div class="title">Fruit ninja</div>
     </div>
+        <!---------------------------'footer'---------------------------------->
+        <footer class="footer-main">
+            <div class="container">
+                <div class="row address-main">
+                    <div class="col-lg-4 col-sm-12 col-xs-12">
+                        <div class="address-box clearfix">
+                            <div class="add-icon">
+                                <img src="/RCart/images/footer/address.gif" alt="" />
+                            </div>
+                            <div class="add-content">
+                                <h5>Address</h5>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut veniam </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 col-xs-12">
+                        <div class="address-box clearfix">
+                            <div class="add-icon">
+                                <!-- <img src="/RCart/images/footer/phone.gif" alt="" /> -->
+                                <img src="/RCart/images/footer/phone.png" alt="" />
+                            </div>
+                            <div class="add-content">
+                                <h5>Phone</h5>
+                                <p> +(91) 000000000 <br />
+                                    +(91) 000000000 </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 col-xs-12">
+                        <div class="address-box clearfix">
+                            <div class="add-icon">
+                                <!-- <img class="hover" src="/RCart/images/footer/mail.gif" alt="" /> -->
+                                <img src="/RCart/images/footer/mail.png" alt="" />
+                            </div>
+                            <div class="add-content">
+                                <h5>Email</h5>
+                                <p> <a href="mailto:sreeraksha1998@gmail.com" style="text-decoration:none">sreeraksha1998@gmail.com</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Copyright Footer -->
+            <footer class="social-content text-center text-white">
+    
+                <!-- Grid container -->
+                <div class="container p-4 pb-0">
+                    <!-- Section: Social media -->
+                    <section class="mb-4 icons-section">
+                        <!-- gmail -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="mailto: sreeraksha1998@gmail.com" role="button">  
+                            e-mail
+                        </a>                   
+                        <!-- hackerrank -->
+                        <a class="btn btn-outline-light btn-floating m-1" href="https://www.hackerrank.com/raksharamesh1998" role="button">
+                            hackerrank
+                        </a>
+    
+                    </section>
+                    <!-- Section: Social media -->
+                </div>
+                <!-- Grid container -->
+    
+                <!-- Copyright -->
+                <div class="text-center p-3">
+                    copyright © 2023 All Rights Reserved by sreeraksha.
+                </div>
+                <!-- Copyright -->
+            </footer>
+        </footer>
     <script src="/RCart/fruitNinja/script.js"></script>
 </body>
 </html>
