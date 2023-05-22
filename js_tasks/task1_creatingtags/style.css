@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+.sample-div {
+    background-color: rgb(166, 107, 221);
+    height: 50vh;
+    width: 50%;
+}
+.sample-anchour{
+    background-color: rgb(204, 63, 63);
+    width: 20%;
+    height: 50vh;
+    margin: 20px 20px 20px 20px;
+}
+.sample-paragraph{
+    background-color: rgb(37, 229, 165);
+    width: 20%;
+    height: 20vh;
+}
