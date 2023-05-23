@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --red : rgb(255, 104, 104);
+    --yellow : rgb(251, 251, 103);
+    --green : rgb(133, 247, 133);
+    --powder : rgb(58, 54, 54);
+}
+
+body{
+    background: var(--powder);
+}
+
+.flex-container{
+    margin-top: 1rem;
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper{
+    display: flex;
+}
+
+.title{
+    font-size: xx-large;
+    color: white;
+}
+
+.box{
+    padding: 4rem;
+    flex-grow: 1;
+}
+
+.red{
+    background: var(--red);
+}
+
+.yellow{
+    background: var(--yellow);
+}
+
+.green{
+    background: var(--green);
+
+}
+
+.title button{
+    padding: 1rem;
+    background: pink;
+    border-radius: 50px;
+    border: none;
+}
+
+/* -------------------------- grid-container ---------------------------- */
+
+.grid-container{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 360px;
+}
+
+.green{
+    grid-column: span 2;
+}
+
+/* -------------------------- display content ---------------------------- */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #FFB74D;
+    height: 30vh;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    color: white;
+    font-size: xxx-large;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  #flex-content{
+    font-size: large;
+  }
+
+  #grid-content{
+    font-size: large;
+  }
+
+

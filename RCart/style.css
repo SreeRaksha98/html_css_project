@@ -11,6 +11,7 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
+
 .top-left{
     padding: 1rem 1rem;
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Vs Grid </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Flex-container -->
+    <div class="title">
+        <p>--------------------------------Flex------------------------------------</p>
+        <button id="btn">demo code</button>
+        <div id="myModal" class="modal">
+        <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="flex-content">
+                    .flex-container{
+                        margin-top: 1rem;
+                        width: 360px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    
+                    .wrapper{
+                        display: flex;
+                    }        
+                </p>
+            </div>                 
+        </div>
+    </div>
+    <div class="flex-container">
+        <div class="wrapper">
+            <div class="box red"></div>
+            <div class="box yellow"></div>
+        </div>
+            <div class="box green"></div>
+    </div>
+
+    <!-- grid-container -->
+    <div class="title">
+        <p>--------------------------------Grid------------------------------------</p>
+        <button id="btn">demo code</button>
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p id="grid-content">
+                        .grid-container{
+                            margin-top: 1rem;
+                            display: grid;
+                            grid-template-rows: 1fr 1fr;
+                            grid-template-columns: 1fr 1fr;
+                            width: 360px;
+                        }
+                        
+                        .green{
+                            grid-column: span 2;
+                        }
+                    </p>
+                </div>                 
+    
+    </div>    
+    <div class="grid-container">
+        <div class="box red"></div>
+        <div class="box yellow"></div>
+        <div class="box green"></div>
+    </div>
+    <script src="/js_tasks/task10_gridVsflex/script.js"></script>
+</body>
+</html>
