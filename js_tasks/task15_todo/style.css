@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main-container{
+    background-color: rgb(100, 240, 240);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.sub-container{
+    background-color: rgb(107, 210, 175);
+    padding: 1rem;
+    margin: 1rem;
+}
