@@ -27,15 +27,17 @@ btnAdd.addEventListener('click', () => {
         btnSave.classList.add('btn-submit')
 
         btnSave.addEventListener('click', () => {
-            if(!localStorage.getItem(TODO_LOCALSTORAGE_KEY)){
-                localStorage.setItem(TODO_LOCALSTORAGE_KEY, JSON.stringify([inputTag.value]))
+            if(inputTag.value.length > 0){
+                if(!localStorage.getItem(TODO_LOCALSTORAGE_KEY)){
+                    localStorage.setItem(TODO_LOCALSTORAGE_KEY, JSON.stringify([inputTag.value]))
+                }
+                else{
+                    var todoList = JSON.parse(localStorage.getItem(TODO_LOCALSTORAGE_KEY))
+                    localStorage.setItem(TODO_LOCALSTORAGE_KEY, JSON.stringify(todoList.concat(inputTag.value)))   
+                }
+                document.getElementById('todo-add-container').remove()   //To close sub conatiner after saving  
+                displayContent()
             }
-            else{
-                var todoList = JSON.parse(localStorage.getItem(TODO_LOCALSTORAGE_KEY))
-                localStorage.setItem(TODO_LOCALSTORAGE_KEY, JSON.stringify(todoList.concat(inputTag.value)))   
-            }
-            document.getElementById('todo-add-container').remove()   //To close sub conatiner after saving  
-            displayContent()
         })
 
         // creating close button
@@ -51,10 +53,12 @@ btnAdd.addEventListener('click', () => {
     }
 })
 
+var backgroundArray = ['cream-bg', 'light-green-bg', 'purple-bg', 'sky-blue-bg', 'pink-bg']
+
 function displayContent (){
     var todoListDisplay = document.querySelector(".todo-list-display")
     todoListDisplay.innerHTML = ""
-    
+
     //will return the value of local storage
     savedData = JSON.parse(localStorage.getItem(TODO_LOCALSTORAGE_KEY))
     console.log(savedData)
@@ -64,9 +68,40 @@ function displayContent (){
     //sub container for displaying data
     todoDom = document.createElement('div')
     todoDom.classList.add('todo-item')
-    todoDom.innerHTML = savedData[index]   // or you can use element instead of savedData[index]
+
+    //setting background for the notes
+    var backgroungIndex = index % backgroundArray.length 
+    todoDom.classList.add(backgroundArray[backgroungIndex]) // to give unique identification to the div's / sub-container
+
+    var todoListDisplayContainer = document.createElement('div')
+    todoListDisplayContainer.classList.add('todo-list-display-container')
+    todoListDisplayContainer.innerHTML = savedData[index]        // or you can use element instead of savedData[index]
+    
+    // Delete button
+    deleteBtn = document.createElement('button')
+    deleteBtn.classList.add('dete-button')
+    deleteBtn.innerHTML = '<p> Done </p>'
+    deleteBtn.setAttribute('data-todo-index', index)
+
+    
+    deleteBtn.addEventListener('click', (event) => {
+        console.log(savedData, event.target.getAttribute('data-todo-index'))
+        var todoToBeRemovedIndex = parseInt(event.target.getAttribute('data-todo-index'))
+        savedData = removeElementByIndex(savedData, todoToBeRemovedIndex)
+        localStorage.setItem(TODO_LOCALSTORAGE_KEY, JSON.stringify(savedData))
+        displayContent()
+    })
+
+    todoDom.append(todoListDisplayContainer, deleteBtn)
     todoListDisplay.append(todoDom)
+
 });
+}
+
+// remove the completed task
+function removeElementByIndex(arr, index) {
+    arr.splice(index, 1)
+    return arr
 }
 
 displayContent()
