@@ -53,7 +53,7 @@ btnAdd.addEventListener('click', () => {
     }
 })
 
-var backgroundArray = ['cream-bg', 'light-green-bg', 'purple-bg', 'sky-blue-bg', 'pink-bg']
+var backgroundArray = ['purple-bg', 'light-green-bg', 'pink-bg', 'cream-bg', 'sky-blue-bg']
 
 function displayContent (){
     var todoListDisplay = document.querySelector(".todo-list-display")

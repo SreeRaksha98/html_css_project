@@ -4,24 +4,24 @@
 }
 
 .cream-bg {
-  color: #ee6b0d;
-  background-color: #fcd6ba;
+color: #EF6C00;
+    background-color: #FFCA28;
 }
 .light-green-bg{
-  color: #018a65;
-  background-color: #d5f6ed;
+  color: #055640;
+  background-color: #44dfb4;
 }
 .purple-bg {
-  color: #4a1ae9;
-  background-color: #e2dbf9;
+  color: #27088d;
+  background-color: #9e86ed;
 }
 .sky-blue-bg{
-  color:  #006aad;
-  background-color:  #e0f3ff;
+  color: #02253b;
+  background-color: #5abfff;
 }
 .pink-bg{
-  color: #df25a4;
-  background-color: #fbe2f3;
+  color: #780051;
+  background-color: #f37acc;
 } 
 
 /* ------------------------------------------- Part -1 (main containers) ----------------------------------------------- */
@@ -208,12 +208,13 @@
 /* ------------- done button -------------*/
 .dete-button {
   border: none;
-  width: 140px;
+  width: 80px;
+  border-radius: 50%;
   height: 50px;
   color: #fff;
   z-index: 1;
   display: flex;
-  background: #171717;
+  background: #000000;
   position: relative;
  }
  
