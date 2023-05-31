@@ -12,7 +12,7 @@ btnAdd.addEventListener('click', () => {
         subContainervar.id = 'todo-add-container'    //important step
 
         // creating input tag 
-        var inputTag = document.createElement('input')
+        var inputTag = document.createElement('textarea')
         inputTag.name = 'input'
         inputTag.setAttribute('id', 1)
         inputTag.classList.add("input-tag")
