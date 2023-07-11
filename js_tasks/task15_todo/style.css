@@ -279,3 +279,9 @@ color: #EF6C00;
 .pink-bg .dete-button::before, .pink-bg .dete-button::after{
   background-color: #da0f99;
 } 
+
+@media all  and (max-width: 658px) {
+  .todo-list-display {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
