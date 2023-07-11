@@ -1,0 +1,342 @@
+.project {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.project img {
+  width: 100%;
+  /* margin-right: 10px; */
+  padding: 1rem 0;
+  object-fit: contain;
+  background: linear-gradient(25deg, #0069ff, #ffa200);
+  height: 7rem;
+  box-shadow: 1px 1px 14px #b1b1b1;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.project .text {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-link {
+  font-weight: bold;
+  text-decoration: none;
+  color: #0081ff;
+  padding: 0.2rem 0;
+  transition: 1s all;
+}
+
+.project-link:hover{
+  background: rgb(244, 244, 244);
+  border-radius: 5px;
+  box-shadow: 1px 1px 14px #b1b1b1;
+  transition: 1s all;
+}
+a:link{
+  color: linear-gradient(25deg, #0069ff, #ffa200);
+}
+
+/* -------------------------------------- testcode */
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
+*{
+  font-family: 'PT Sans', sans-serif;
+}
+
+.header{
+  padding: 2rem;
+  background: linear-gradient(25deg, #0069ff, #ffa200);
+  color: white;
+  /* text-align: center; */
+  font-weight: bold;
+  height: 15vh;
+  font-size: xxx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------title */
+.title{
+  font-size: x-large;
+  font-style: italic;
+  margin: 1rem;
+  padding: 1rem;
+}
+.type {
+  color:#0000;
+  background:
+    linear-gradient(-90deg,#00DFFC 5px,#0000 0) 10px 0,
+    linear-gradient(25deg, #0069ff, #ffa200) 0 0;
+  background-size:calc(var(--n)*1ch) 200%;
+  -webkit-background-clip:padding-box,text;
+  background-clip:padding-box,text;
+  background-repeat:no-repeat;
+  animation: 
+   b .7s infinite steps(1),   
+   t calc(var(--n)*.3s) steps(var(--n)) forwards;
+}
+
+@keyframes t{
+  from {background-size:0 200%}
+}
+@keyframes b{
+  50% {background-position:0 -100%,0 0}
+}
+
+/* ---------title */
+
+.projects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.project{
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #004eff5e;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  width: calc(33.33% - 2rem);
+  display: grid;
+  align-content: space-evenly;
+
+}
+
+.footer{
+    padding: 35px;
+}
+
+.footer h3{
+    font-size: 1.1rem;
+    color: white;
+}
+
+.footer .para{
+    color: white;
+    opacity: 0.9; 
+    position: relative;
+    top: -10px;
+}
+
+/* footer Button CSS Code */
+.footer button{
+    padding: 15px;
+    width: 100%;
+    max-width: 210px;
+    background: hsl(71, 73%, 54%);
+    color: white;
+    border-radius: 6px;
+    border: transparent;
+    outline: none;
+    font-weight: 400;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.footer button:hover{
+    transition: 0.4s ease;
+    color: whitesmoke;
+    background: tomato;
+    box-shadow: 1px 1px 2px 2px black;
+    outline: none;
+}
+
+  
+  /* Grid Container CSS Code  */
+  footer {
+      display: grid;
+      margin: 0;
+      margin-top:auto;
+  }
+  
+  
+  /* Inner Grid Item-Box CSS Code  */
+  .footer{
+      padding: 35px;
+  }
+  
+  
+  /* Inner Grid Card Class Item CSS Code  */
+  #card-1{
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 3;
+      background: white;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+  }
+  
+  #card-2{
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      background: linear-gradient(25deg, #0069ff, #ffa200);
+      border-bottom-left-radius: 8px;
+  }
+  
+  #card-3{
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      background: linear-gradient(25deg, #0069ff, #ffa200);
+      opacity: 0.8;
+      border-bottom-right-radius: 8px;
+  }
+  
+  
+  /* Item-1 CSS Code */
+  .footer .main-heading{
+      font-size: 1.5rem;
+      color: hsl(179, 62%, 43%);
+  }
+  
+  .footer .sub-heading{
+      font-size: 1.2rem;
+      color: hsl(71, 73%, 54%);
+  }
+  
+  .footer p{  
+      color: hsl(218, 22%, 67%);
+      line-height: 1.5;
+      position: relative;
+      font-weight: 600;
+      top: -5px;
+  }
+  
+  /* Item-2 CSS Code */
+  .footer h3{
+      font-size: 1.1rem;
+      color: white;
+  }
+  
+  .footer .price{
+      font-size: 2rem;
+      font-weight: bold;
+      color: white;
+  }
+  
+  .footer .price span{
+      font-size: 1rem;
+      font-weight: normal;
+      color: white;
+      opacity: 0.7;
+      top: -5px;
+      left: -5px;
+      position: relative;
+  }
+  
+  .footer .para{
+      color: white;
+      opacity: 0.9; 
+      position: relative;
+      top: -10px;
+  }
+  
+  
+  /* Item-2 Button CSS Code */
+  .footer button{
+    padding: 15px;
+    width: 100%;
+    max-width: 210px;
+    background: linear-gradient(25deg, #ffa200, #0069ff);
+    color: white;
+    border-radius: 6px;
+    border: transparent;
+    outline: none;
+    font-weight: 400;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin: auto;
+  }
+  
+  .footer button:hover{
+      transition: 0.4s ease;
+      color: whitesmoke;
+      background: #ffa200;
+      box-shadow: 1px 1px 2px 2px black;
+      outline: none;
+  }
+  
+  /* Item-3 CSS Code */
+  .item-3 h3{
+      font-size: 1.1rem;
+      color: white;
+  }
+  
+  .item-3 p{
+      font-size: 0.85rem;
+      color: white;
+      opacity: 0.8;
+      line-height: 1.5;
+  }
+  
+  
+  /* Footer Design CSS COde */
+  footer{
+      font-size: 1rem;
+      font-weight: bold;
+      font-family: Arial, Helvetica, sans-serif;
+      color: black;
+      text-align: center;
+  }
+  
+  footer a{
+      text-decoration: underline;
+      cursor: pointer;
+  }
+  
+  
+  /* Responsive CSS Code */
+  @media  all and (max-width: 1500px) {
+      body{
+          width: auto;
+          max-width: none;
+          transition: 0.3s ease;
+      }
+      
+  }
+  @media all  and (max-width: 658px) {
+      body{
+          padding: 20px;
+          transition: 0.4s;
+          margin: auto;
+      }
+      #card-2{
+          border-bottom-left-radius: 0px;
+          grid-column-end: 3;
+      }
+      #card-3{
+          grid-row-start: 3;
+          grid-row-end: 3;
+          grid-column-start: 1;
+          grid-column-end: 3;
+          border-bottom-left-radius: 8px;
+          transition: 0.3s;
+      }
+  }
+  
+  @media all and (max-width: 400px) {
+      .footer .main-heading{
+          font-size: 1.3rem;
+      }
+      
+      .footer .sub-heading{
+          font-size: 1rem;
+      }
+      
+      .footer p{  
+          font-size: 14px;
+          line-height: 2;
+          transition: 0.3s;
+      }
+  }
