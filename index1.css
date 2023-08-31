@@ -1,3 +1,10 @@
+*{
+  /* margin: 0;
+  padding: 0; */
+  font-family: 'Poppins', sans-serif;
+  background-color: black;
+}
+
 .project {
   display: flex;
   align-items: center;
@@ -49,7 +56,7 @@ a:link{
 .header{
   padding: 2rem;
   background: linear-gradient(25deg, #0069ff, #ffa200);
-  color: white;
+  color: #01579B;
   /* text-align: center; */
   font-weight: bold;
   height: 15vh;
@@ -95,11 +102,13 @@ a:link{
   justify-content: center;
   margin: 2rem auto;
   max-width: 1200px;
+  background-color: black;
+  color: wheat;
 }
 
 .project{
   border-radius: 5px;
-  box-shadow: 0 2px 4px #004eff5e;
+  box-shadow: 0 4px 15px 1px #014fff;
   margin: 1rem;
   padding: 1rem;
   text-align: center;

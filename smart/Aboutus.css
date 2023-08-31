@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    color: white;
+    height: 100vh;
+    width: 100%;
+    background-image: url(/smart/images/raksha/photo5.jpeg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.large-font {
+    font-size: xx-large;
+}
+
+.about-text {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.about-text * {
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 1px;
+    line-height: 2;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 4rem;
+}
+
+/* project logo */
+.logo-img {
+    height: 70px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    font-size: xx-large;
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-list-nav ul {
+    display: flex;
+}
+
+.header-list-nav ul li {
+    list-style-type: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+.header-list-nav ul a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+.header-list-nav ul a:hover,
+.header-list-nav ul a.active {
+    color: #088178;
+    content: "";
+}
+
+.header-list-icon a {
+    color: #1a1a1a;
+    padding-left: 20px;
+    transition: 0.3s ease;
+}
+
+.header-list-icon a:hover,
+.header-list-nav ul a.active {
+    color: #088178;
+}
+
+.header-list-nav ul li a:hover::after,
+.header-list-nav ul li a.active::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+.navbar {
+    transition: all 0.3s ease-in-out;
+    background-color: #91fff78f;
+    padding: 20px 80px;
+
+}
+
+/* Style when scrolling down */
+.navbar.scrolled {
+    background-color: #ffffff;
+    padding: 10px 80px;
+
+}
+
+#footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 75px;
+    background-color: #a0deda30;
+}
+
+#footer p,
+#footer a {
+    color: rgb(109, 109, 109);
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #088178;
+}
+
+#footer .about a {
+    display: block;
+    padding: 8px 0;
+}
+
+#footer .myaccount a {
+    display: block;
+    padding: 8px 0;
+}
+
+#footer .download img {
+    border: 1px solid #08817969;
+    border-radius: 7px;
+}
