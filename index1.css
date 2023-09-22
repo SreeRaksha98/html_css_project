@@ -2,9 +2,15 @@
   /* margin: 0;
   padding: 0; */
   font-family: 'Poppins', sans-serif;
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 
+.skills-class{
+  font-style: italic;
+  font-weight: 300;
+  font-size: small;
+  color: #757575;
+}
 .project {
   display: flex;
   align-items: center;
@@ -16,7 +22,7 @@
   /* margin-right: 10px; */
   padding: 1rem 0;
   object-fit: contain;
-  background: linear-gradient(25deg, #0069ff, #ffa200);
+  background: #FCE4EC;
   height: 7rem;
   box-shadow: 1px 1px 14px #b1b1b1;
   border-radius: 5px;
@@ -31,7 +37,7 @@
 .project-link {
   font-weight: bold;
   text-decoration: none;
-  color: #0081ff;
+  color: #039BE5;
   padding: 0.2rem 0;
   transition: 1s all;
 }
@@ -43,7 +49,7 @@
   transition: 1s all;
 }
 a:link{
-  color: linear-gradient(25deg, #0069ff, #ffa200);
+  /* color: linear-gradient(25deg, #0069ff, #ffa200); */
 }
 
 /* -------------------------------------- testcode */
@@ -55,8 +61,8 @@ a:link{
 
 .header{
   padding: 2rem;
-  background: linear-gradient(25deg, #0069ff, #ffa200);
-  color: #01579B;
+  background: #72ddf7;
+  color: #f8f9fa;
   /* text-align: center; */
   font-weight: bold;
   height: 15vh;
@@ -76,8 +82,8 @@ a:link{
 .type {
   color:#0000;
   background:
-    linear-gradient(-90deg,#00DFFC 5px,#0000 0) 10px 0,
-    linear-gradient(25deg, #0069ff, #ffa200) 0 0;
+    linear-gradient(-90deg,#000000 5px,#0000 0) 10px 0,
+    linear-gradient(25deg, #000000, #000000) 0 0;
   background-size:calc(var(--n)*1ch) 200%;
   -webkit-background-clip:padding-box,text;
   background-clip:padding-box,text;
@@ -102,13 +108,13 @@ a:link{
   justify-content: center;
   margin: 2rem auto;
   max-width: 1200px;
-  background-color: black;
-  color: wheat;
+  background-color: rgb(255, 255, 255);
+  color: rgb(4, 4, 4);
 }
 
 .project{
   border-radius: 5px;
-  box-shadow: 0 4px 15px 1px #014fff;
+  box-shadow: 0 4px 15px 1px #9ca1ac;
   margin: 1rem;
   padding: 1rem;
   text-align: center;
@@ -124,11 +130,11 @@ a:link{
 
 .footer h3{
     font-size: 1.1rem;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .footer .para{
-    color: white;
+    color: rgb(6, 6, 6);
     opacity: 0.9; 
     position: relative;
     top: -10px;
@@ -140,18 +146,18 @@ a:link{
     width: 100%;
     max-width: 210px;
     background: hsl(71, 73%, 54%);
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 6px;
     border: transparent;
     outline: none;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 0.9rem;
     cursor: pointer;
 }
 
 .footer button:hover{
     transition: 0.4s ease;
-    color: whitesmoke;
+    color: rgb(0, 0, 0);
     background: tomato;
     box-shadow: 1px 1px 2px 2px black;
     outline: none;
@@ -178,7 +184,7 @@ a:link{
       grid-row-end: 2;
       grid-column-start: 1;
       grid-column-end: 3;
-      background: white;
+      background: rgb(20, 19, 19);
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
   }
@@ -188,7 +194,7 @@ a:link{
       grid-row-end: 3;
       grid-column-start: 1;
       grid-column-end: 2;
-      background: linear-gradient(25deg, #0069ff, #ffa200);
+      /* background: linear-gradient(25deg, #0069ff, #ffa200); */
       border-bottom-left-radius: 8px;
   }
   
@@ -197,11 +203,14 @@ a:link{
       grid-row-end: 3;
       grid-column-start: 2;
       grid-column-end: 3;
-      background: linear-gradient(25deg, #0069ff, #ffa200);
-      opacity: 0.8;
+      background: #72ddf7;
+            opacity: 0.8;
       border-bottom-right-radius: 8px;
   }
   
+  .footer{
+    background: #72ddf7;
+  }
   
   /* Item-1 CSS Code */
   .footer .main-heading{
@@ -224,20 +233,22 @@ a:link{
   
   /* Item-2 CSS Code */
   .footer h3{
+    background: #72ddf7;
       font-size: 1.1rem;
-      color: white;
+      color: rgb(255, 255, 255);
   }
   
   .footer .price{
+    background: #72ddf7;
       font-size: 2rem;
       font-weight: bold;
-      color: white;
+      color: rgb(17, 17, 17);
   }
   
   .footer .price span{
       font-size: 1rem;
       font-weight: normal;
-      color: white;
+      color: rgb(16, 15, 15);
       opacity: 0.7;
       top: -5px;
       left: -5px;
@@ -245,7 +256,8 @@ a:link{
   }
   
   .footer .para{
-      color: white;
+    background: #72ddf7;
+      color: rgb(255, 255, 255);
       opacity: 0.9; 
       position: relative;
       top: -10px;
@@ -255,14 +267,15 @@ a:link{
   /* Item-2 Button CSS Code */
   .footer button{
     padding: 15px;
+    background: #f06795;
     width: 100%;
     max-width: 210px;
-    background: linear-gradient(25deg, #ffa200, #0069ff);
-    color: white;
+    /* background: #72ddf7; */
+        color: rgb(255, 255, 255);
     border-radius: 6px;
     border: transparent;
     outline: none;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 0.9rem;
     cursor: pointer;
     margin: auto;
@@ -288,7 +301,9 @@ a:link{
       opacity: 0.8;
       line-height: 1.5;
   }
-  
+  .atag{
+    background: #72ddf7;
+  }
   
   /* Footer Design CSS COde */
   footer{
