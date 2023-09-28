@@ -33,7 +33,7 @@
 }
 
 body {
-    background-color: #a1486a;
+    background-color: #f6e9f8;
     color: #14181D;
     font-family: "Mulish", sans-serif; 
     display: flex;
@@ -47,7 +47,7 @@ body {
     height: 440px;
     width: 380px;
     border-radius: 5px;
-    box-shadow: 0px 9px 30px 6px #e83ea0;
+    box-shadow: 0px 9px 30px 6px #BDBDBD;
 }
 
 h1 {
