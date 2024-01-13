@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xmlHTTPrequest</title>
+</head>
+
+<body>
+    <button id="load">Load Table</button>
+    <table class="table"></table>
+    <script>
+        let load = document.getElementById("load")
+        load.addEventListener('click', () => {
+            let data = apiCall()
+            console.log('aaa final', data)
+        })
+        function apiCall() {
+            const myRequest = new XMLHttpRequest()
+            console.log('New XMLHttpRequest object:')                   // DEBUG
+            console.log(myRequest)                            // DEBUG (comment out sent())
+            let response = []
+            let table = document.querySelector(".table")
+
+            /**
+             * Step 0
+             * onload method is an event of XMLHttpRequest, which is executed by XMLHttpRequest once the data is loaded by the n/w
+             * # if readyState is DONE
+             **/
+            myRequest.onload = () => {
+                /**
+                 * Step 999 -> because executed at the end
+                 * Response will be stored in myRequest object as its an instance of XMLHttpRequest
+                 */
+                if (myRequest.status === 200) {
+                    /** 
+                     * Step 999.0.1
+                     * Raw Data as a file content will be in myRequest.responseText which is of string
+                     *
+                     **/
+                    const data = JSON.parse(myRequest.responseText)     // convert to obj.
+                    /**
+                     * Step 999.0.2
+                     * data is in the JSON Format
+                     */
+                    let tableContent = `<tr><th>Name</th></tr>`
+                    let catchData = data.users.map((item)=>{
+                        return `<tr><td>${item.firstName}</td></tr>`
+                    })
+                    tableContent = tableContent + catchData
+                    table.innerHTML = tableContent
+                } else {
+                    console.log('Something went wrong')
+                }
+            }
+            myRequest.onreadystatechange = ()=>{
+                console.log('aaa', 'status >>', myRequest.status, '- readyState >>', myRequest.readyState)
+            }
+
+            console.log('aaaa 0', 'before open >>', )
+            // open (initialize/prepair the request)
+            myRequest.open('GET', 'https://dummyjson.com/users')
+
+            // send the new request (asynchronous by default)
+            // returns as soon as the request is sent
+            myRequest.send()
+            return response
+        }
+    </script>
+</body>
+
+</html>

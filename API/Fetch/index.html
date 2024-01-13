@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API</title>
+</head>
+
+<body>
+    <button id="load">Load Table</button>
+    <table class="table"></table>
+    <script>
+        var a;
+        let load = document.getElementById("load")
+        load.addEventListener('click', () => {
+            let data = apiCall()
+            console.log('aaa final', data)
+        })
+        function apiCall() {
+            let response = []
+            let table = document.querySelector(".table")
+            let tableContent = `<tr><th>Name</th></tr>`
+
+            fetch('https://dummyjson.com/users')
+            .then((res) => {
+                console.log(res)
+                return res.json()
+            })
+            .then((data) => {
+                let tableContent = `<tr><th>Name</th></tr>`
+                    let catchData = data.users.map((item)=>{
+                        return `<tr><td>${item.firstName}</td></tr>`
+                    })
+                    tableContent = tableContent + catchData
+                    table.innerHTML = tableContent
+            }).catch((err, sv) => {
+                a =err
+                console.log(err, Object.keys(err), sv)
+            })
+            
+            return response
+        }
+    </script>
+</body>
+
+</html>
