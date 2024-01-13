@@ -113,11 +113,28 @@ body {
 
 .search {
     width: 100%;
-    position: relative;
+    /* position: relative; */
     display: flex;
     margin: auto;
+    position: absolute;
+    max-width: 400px;
+    /* right: 50px; */
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
+.search-box{
+    width: 100%;
+    /* position: relative; */
+    display: flex;
+    margin: auto;
+    position: relative;
+    max-width: 400px;
+    /* right: 50px; */
+
+}
 .searchTerm {
     width: 100%;
     border: 3px solid #00ae45;
@@ -129,6 +146,19 @@ body {
     height: 36px;
 }
 
+.search-suggestion{
+    background-color: white;
+    top: 40px;
+    border-radius: 5px;
+    position: absolute;
+    max-width: 400px;
+    width: 100%;
+
+}
+.search-suggestion ul{
+    list-style: none;
+    padding: 10px;
+}
 .searchTerm:focus{
     color: #00B4CC;
 }
@@ -166,7 +196,12 @@ body {
 
 .user-logo svg {
     width: 36px;
-    margin: auto;
+    /* margin: auto; */
+}
+
+.user-logo-icon{
+    margin-left: auto;
+    margin-right: 0;
 }
 
 /* --------------------------------------shop now button--------------------------------------------------- */
